@@ -22,6 +22,7 @@ cursor = cnx.cursor()
 
 DB_NAME = 'humanitarian'
 
+
 TABLE = {'invoice': (
     "CREATE TABLE `invoice` ("
     "  invoice_num int(14) NOT NULL ,"
