@@ -31,7 +31,7 @@ TABLE = {'invoice': (
     "  act_date timestamp ,"
     "   id varchar(250) ,"
     "   region varchar(250) ,"
-    "   region_edrpou int(14) ,"
+    "   region_edrpou varchar(250) ,"
     "   item_id int(14) ,"
     "   group_name varchar(250) ,"
     "   name varchar(250) ,"

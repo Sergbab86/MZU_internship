@@ -4,6 +4,8 @@ import time
 import pymysql
 import json
 
+import schedule
+
 url = 'https://uabudget.phc.org.ua/api.budget/hs/humanitarian/v1/' \
       'GetInvoices?token=fabf5ed02a2d4426ad49de1f0599582c'
 
@@ -33,6 +35,6 @@ for invoice in json_response:
 #
 # schedule.every(1).minutes.do(write_file())
 #
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
